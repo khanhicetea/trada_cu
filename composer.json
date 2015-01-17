@@ -1,0 +1,21 @@
+{
+    "name": "sifoni/sifoni-framework",
+    "description": "Sifoni Web Framework Skeleton",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "KhanhIceTea",
+            "email": "khanhicetea@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "sifoni/sifoni": "~1.2"
+    },
+    "extra": {
+        "sifoni-app-dir": "app",
+        "sifoni-web-dir": "web"
+    }
+}
