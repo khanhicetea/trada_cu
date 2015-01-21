@@ -15,8 +15,9 @@ php composer.phar update
 ```
 
 ## Hello Sifoni
-- Create new virtual host with document root point to `web` folder.
-- Design your web application in `app` folder.
-- Deploy it ! Enjoy it ! :)
+- Create new virtual host with document root point to **web** folder.
+- Chmod 777 two folders : **app/cache** and **app/log**
+- Design your web application in **app** folder.
+- Develop with it ! Deploy it ! Enjoy it ! :)
 
 -------------------------------
