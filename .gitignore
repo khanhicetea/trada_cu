@@ -5,3 +5,9 @@
 # Composer PHAR
 /composer.phar
 /.idea
+
+# Cache and logs
+/app/cache/*
+/app/log/*
+!app/cache/.gitkeep
+!app/log/.gitkeep
