@@ -20,6 +20,7 @@
     },
     "extra": {
         "sifoni-app-dir": "app",
-        "sifoni-web-dir": "web"
+        "sifoni-web-dir": "web",
+        "sifoni-test-dir": "test"
     }
 }
