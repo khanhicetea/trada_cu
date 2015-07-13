@@ -1,19 +1,14 @@
 <?php
 
-// Composer Autoload
-define('ROOT_PATH', dirname(dirname(__FILE__)));
-$autoloader = require_once (ROOT_PATH . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php');
+$engine = require (dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bootstrap.php');
 
 class WebTestCase extends \Silex\WebTestCase {
     public function createApplication() {
-        global $autoloader;
-
-        $app = \Sifoni\Engine::getInstance()->init()->bootstrap(array(
-            'path.root' => ROOT_PATH,
-            'autoloader' => $autoloader,
-            'debug' => true
-        ))->start()->getApp();
-
+        global $engine;
+        
+        $engine->start();
+        $app = $engine->getApp();
+        $app['debug'] = true;
         $app['exception_handler']->disable();
         $app['session.test'] = true;
 
