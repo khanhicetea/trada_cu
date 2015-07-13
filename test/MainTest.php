@@ -1,6 +1,6 @@
 <?php
 
-class MoneyTest extends WebTestCase {
+class MainTest extends WebTestCase {
     public function testHello() {
         $client = $this->createClient();
         $crawler = $client->request('GET', '/hello/world');

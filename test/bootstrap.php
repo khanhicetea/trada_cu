@@ -2,7 +2,7 @@
 
 // Composer Autoload
 define('ROOT_PATH', dirname(dirname(__FILE__)));
-$autoloader = include ROOT_PATH . '/vendor/autoload.php';
+$autoloader = require_once (ROOT_PATH . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php');
 
 class WebTestCase extends \Silex\WebTestCase {
     public function createApplication() {
