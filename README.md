@@ -1,5 +1,7 @@
 # Sifoni = Silex + Symfony
 
+[![Build Status](https://travis-ci.org/ndksolution/sifoni-framework.svg?branch=master)](https://travis-ci.org/ndksolution/sifoni-framework)
+
 ## Install
 Install via **Composer** :
 ```
