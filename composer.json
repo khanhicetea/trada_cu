@@ -11,12 +11,15 @@
         }
     ],
     "require": {
-        "sifoni/sifoni": "~2.0",
-        "knplabs/console-service-provider": "~1.0"
+        "php": ">=5.5.0",
+        "sifoni/sifoni": "~3.0",
+        "knplabs/console-service-provider": "~1.0",
+        "vlucas/phpdotenv": "~2.2",
+        "robmorgan/phinx": "~0.5"
     },
     "require-dev": {
-        "symfony/browser-kit": "~2.7",
-        "symfony/css-selector": "~2.7"
+        "symfony/browser-kit": "~2.7|3.0.*",
+        "symfony/css-selector": "~2.7|3.0.*"
     },
     "extra": {
         "sifoni-app-dir": "app",

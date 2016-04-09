@@ -7,7 +7,14 @@
 /.idea
 
 # Cache and logs
-/app/cache/*
-/app/log/*
-!app/cache/.gitkeep
-!app/log/.gitkeep
+/storage/cache/*
+/storage/log/*
+!storage/cache/.gitkeep
+!storage/log/.gitkeep
+
+# .env
+.env*
+!.env.example
+
+# Phinx
+phinx.yml

@@ -5,13 +5,13 @@ return array(
         // Connections
         'capsule.connections' => array(
             'default' => array(
-                'driver'    => 'mysql',
-                'host'      => 'localhost',
-                'database'  => 'sifoni',
-                'username'  => 'root',
-                'password'  => '',
-                'charset'   => 'utf8',
-                'collation' => 'utf8_unicode_ci',
+                'driver'    => env('DB_DRIVER', 'mysql'),
+                'host'      => env('DB_HOST', 'localhost'),
+                'database'  => env('DB_DATABASE', 'db'),
+                'username'  => env('DB_USERNAME', 'root'),
+                'password'  => env('DB_PASSWORD', ''),
+                'charset'   => env('DB_CHARSET', 'utf-8'),
+                'collation' => env('DB_COLLATION', 'utf8_unicode_ci'),
                 'prefix'    => '',
                 'logging'   => false,
             )
