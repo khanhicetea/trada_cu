@@ -1,0 +1,36 @@
+{
+    "name": "sifoni/sifoni-framework",
+    "description": "Sifoni Web Framework Skeleton",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "KhanhIceTea",
+            "email": "khanhicetea@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "sifoni/sifoni": "~3.0",
+        "knplabs/console-service-provider": "~1.0",
+        "vlucas/phpdotenv": "~2.2",
+        "robmorgan/phinx": "~0.5"
+    },
+    "require-dev": {
+        "symfony/browser-kit": "~2.7|3.0.*",
+        "symfony/css-selector": "~2.7|3.0.*"
+    },
+    "extra": {
+        "sifoni-app-dir": "app",
+        "sifoni-web-dir": "web",
+        "sifoni-test-dir": "test"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Controller\\": "app/controller/",
+            "App\\Model\\": "app/model/",
+            "App\\Command\\": "app/command/"
+        }
+    }
+}

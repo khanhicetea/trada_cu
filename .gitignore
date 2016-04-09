@@ -1,0 +1,20 @@
+# Managed by Composer
+/vendor/
+/composer.lock
+
+# Composer PHAR
+/composer.phar
+/.idea
+
+# Cache and logs
+/storage/cache/*
+/storage/log/*
+!storage/cache/.gitkeep
+!storage/log/.gitkeep
+
+# .env
+.env*
+!.env.example
+
+# Phinx
+phinx.yml

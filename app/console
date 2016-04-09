@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+$engine = require (dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bootstrap.php');
+$engine->start();
+$app = $engine->getApp();
+
+$console_config = require ($engine->getDirPath('config') . DIRECTORY_SEPARATOR . 'command.php');
+
+$app->register(new \Knp\Provider\ConsoleServiceProvider(), array(
+    'console.name'              => $console_config['name'],
+    'console.version'           => $console_config['version'],
+    'console.project_directory' => $app['path.root']
+));
+
+$console_application = $app['console'];
+
+foreach ($console_config['commands'] as $cmd) {
+    $console_application->add($cmd);
+}
+
+$console_application->run();
