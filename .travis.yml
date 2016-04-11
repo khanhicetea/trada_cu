@@ -7,3 +7,4 @@ php:
 install:
   - composer update
 script: phpunit
+before_script: cp .env.example .env
