@@ -8,7 +8,7 @@ if (!function_exists('engine')) {
 
 if (!function_exists('app')) {
     function app($key = null) {
-        return $key ? engine()->getApp()[$key] : engine()->getApp()->get();
+        return $key ? engine()->getApp()[$key] : engine()->getApp();
     }
 }
 
