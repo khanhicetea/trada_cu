@@ -2,7 +2,7 @@
 namespace App\Command;
 
 
-use Knp\Command\Command;
+use Ivoba\Silex\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -12,7 +12,7 @@ class Inspire extends Command {
             ->setName("qod")
             ->setDescription("Quote of the day");
     }
-    
+
     protected function execute(InputInterface $input, OutputInterface $output) {
         $raw_json = file_get_contents('http://api.theysaidso.com/qod.json');
         $data = json_decode($raw_json, true);
