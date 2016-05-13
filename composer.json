@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.5.0",
         "sifoni/sifoni": "~3.0",
-        "knplabs/console-service-provider": "~1.0",
+        "ivoba/console-service-provider": "~2.0",
         "vlucas/phpdotenv": "~2.2",
         "robmorgan/phinx": "~0.5"
     },
