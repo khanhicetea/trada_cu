@@ -16,7 +16,7 @@
         "ivoba/console-service-provider": "~2.0",
         "vlucas/phpdotenv": "~2.2",
         "robmorgan/phinx": "~0.5",
-        "ezyang/htmlpurifier": "~4,7"
+        "ezyang/htmlpurifier": "~4.7"
     },
     "require-dev": {
         "symfony/browser-kit": "~2.7|3.0.*",
