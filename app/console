@@ -7,7 +7,7 @@ $engine = require (dirname(__DIR__) . DIRECTORY_SEPARATOR . 'bootstrap.php');
 $engine->start();
 $app = $engine->getApp();
 
-$console_config = require ($engine->getDirPath('config') . DIRECTORY_SEPARATOR . 'command.php');
+$console_config = require ($engine->getAppPath('config') . DIRECTORY_SEPARATOR . 'command.php');
 
 $app->register(new \Ivoba\Silex\Provider\ConsoleServiceProvider(), array(
     'console.name'              => $console_config['name'],

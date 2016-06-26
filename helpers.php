@@ -1,27 +1,31 @@
 <?php
 
 if (!function_exists('engine')) {
-    function engine() {
+    function engine()
+    {
         return \Sifoni\Engine::getInstance();
     }
 }
 
 if (!function_exists('app')) {
-    function app($key = null) {
+    function app($key = null)
+    {
         return $key ? engine()->getApp()[$key] : engine()->getApp();
     }
 }
 
 if (!function_exists('__')) {
-    function __($key, $params = []) {
+    function __($key, $params = [])
+    {
         return app('translator')->trans($key, $params);
     }
 }
 
 if (!function_exists('env')) {
-    function env($key, $default = null) {
+    function env($key, $default = null)
+    {
         $value = getenv($key);
-        
+
         if ($value === false) {
             return $default;
         }
@@ -50,5 +54,5 @@ if (!function_exists('env')) {
         }
 
         return $value;
-    }    
+    }
 }
