@@ -4,7 +4,7 @@ namespace App\Command;
 
 return array(
     'name' => 'Sifoni',
-    'version' => '1.0.0',
+    'version' => '4.0',
     'commands' => array(
         new Inspire(),
     ),
