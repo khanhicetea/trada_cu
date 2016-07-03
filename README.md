@@ -1,16 +1,16 @@
-# Sifoni = Silex + Symfony
+# Trada Framework 
 
-[![Build Status](https://travis-ci.org/ndksolution/sifoni-framework.svg?branch=master)](https://travis-ci.org/ndksolution/sifoni-framework)
+[![Build Status](https://travis-ci.org/khanhicetea/trada.svg?branch=master)](https://travis-ci.org/khanhicetea/trada)
 
 ## Install
 Install via **Composer** :
 ```
-composer create-project sifoni/sifoni-framework your-path/
+composer create-project khanhicetea/trada your-path/
 ```
 
 Or clone from **Github** :
 ```
-git clone https://github.com/ndksolution/sifoni-framework.git your-path
+git clone https://github.com/khanhicetea/trada.git your-path
 cd your-path
 curl -sS https://getcomposer.org/installer | php
 php composer.phar update
